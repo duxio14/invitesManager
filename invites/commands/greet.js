@@ -24,14 +24,6 @@ module.exports = {
         where: { guildId: guild.id }
       });
 
-      // Si la guilde n'a pas d'entrées, en créer une nouvelle
-      // if (!existing) {
-      //   await client.models.greet.create({
-      //     guildId: guild.id,
-      //     channelIds: JSON.stringify([])  // Créer un tableau vide si aucun salon n'existe
-      //   });
-      // }
-
       // Vérifier si channelIds est une chaîne valide
       let currentChannelIds = [];
       try {
